@@ -1,0 +1,9 @@
+# mysql setting para
+mysql:
+  user: "admin"
+  password: "letsgethd"
+  port: 3306
+  host: "database-1.ctn2lesi9qqn.us-east-1.rds.amazonaws.com"
+  db: "backup"
+  charset: "utf8"
+limit: 50000
