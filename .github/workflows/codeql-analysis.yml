@@ -54,7 +54,7 @@ jobs:
         # queries: security-extended,security-and-quality
     - uses: github/codeql-action/init@v2
       with:
-        config-file: /.github/workflows/codeql-config.yml
+        query: /.github/workflows/custom_query.ql
         
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
@@ -73,3 +73,4 @@ jobs:
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
+
