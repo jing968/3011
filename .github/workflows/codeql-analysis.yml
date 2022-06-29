@@ -45,6 +45,7 @@ jobs:
       uses: github/codeql-action/init@v2
       with:
         languages: ${{ matrix.language }}
+        config-file: ./.github/codeql/codeql-config.yml
         
         # If you wish to specify custom queries, you can do so here or in a config file.
         # By default, queries listed here will override any specified in a config file.
@@ -52,9 +53,9 @@ jobs:
         
         # Details on CodeQL's query packs refer to : https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#using-queries-in-ql-packs
         # queries: security-extended,security-and-quality
-    - uses: github/codeql-action/init@v2
-      with:
-        queries: security-extended
+    #- uses: github/codeql-action/init@v2
+      #with:
+        #queries: security-extended
         #/.github/workflows/custom_query.ql
         
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
