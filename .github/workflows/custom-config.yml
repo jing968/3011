@@ -8,7 +8,7 @@ queries:
   - name: Use an external query (run a single query from an external QL pack)
     uses: octo-org/python-qlpack/show_ifs.ql@main
   - name: Use a query suite file (run queries from a query suite in this repo)
-    uses: ./custom_query.ql
+    uses: /custom_query.ql
 
 paths:
   - src 
